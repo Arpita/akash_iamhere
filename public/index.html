@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+    <form action="/complex/addApData" method="POST">
+        <label for="name">Name of Apartment Complex: </label>
+        <input type="text" name="apName">
+
+        <label for="numTowers">Number of Towers:</label>
+        <input type="number" name="numTowers">
+
+        <label for="numFloors">No. of floors</label>
+        <input type="number" name="numFloors">
+
+        <label for="flatsPerFloor">No. of flats per floor: </label>
+        <input type="number" name="flatsPerFloor">
+
+        <button type="submit">Save</button>
+    </form>
+    <form action="/complex/showAvailableFlats" method="get">
+        <button type="button">Show Avail Flats</button>
+    </form>
+    <form action="/complex/updateAvailableFlats" method="post">
+        <input type="text" name="flatnum">
+        <button type="button">Show Avail Flats</button>
+    </form>
+</body>
+</html>
